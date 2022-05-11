@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/eac6c70ff4.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+    <!-- AOS JS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+
+    <title>SHawthorne III</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Navbar Toggler -->
+      <div class="navbar-toggler">
+        <div class="nav-btn"></div>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="nav">
+          <!-- Logo -->
+          <a href="#" class="logo"><h3 class="font-weight-light text-uppercase">SHawthorne <span>III</h3></a>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-links">Home</a></li>
+            <li class="nav-item">
+              <a href="#about" class="nav-links">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-links">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-links">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-links">Services</a>
+            </li>
+          </ul>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="bg-light pt-5" id="home">
+      <div class="container pt-5">
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-6 order-2 order-md-1">
+            <h5 class="font-weight-light">Hello, and welcome. I'm, </h5>
+            <h1 class="display-3 font-weight-bold">Sylvester</h1>
+            <h5 class="font-weight-light">Frontend / Blockchain Developer</h5>
+            <a
+              href="#about"
+              class="btn btn-info font-weight-light text-white px-5 mt-3 text-uppercase"
+              >Learn more</a
+            >
+          </div>
+          <div class="col-md-5 col-lg-6 order-1 order-md-2 text-center">
+            <img
+              src="./images/car-8.jpg"
+              alt="Photo of car"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- About -->
+    <section class="py-5" id="about">
+      <div class="container py-5">
+        <div class="row mb-5">
+          <div class="col text-center">
+            <h1 class="display-4">About</h1>
+            <p class="lead text-muted">
+              Hi, my name is Sylvester, nice to meet you.
+            </p>
+          </div>
+        </div>
+        <div data-aos="fade" data-aos-delay="1000" class="about-img"></div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="py-5" id="portfolio">
+      <div class="container py-5 text-center">
+        <div class="row mb-5">
+          <div class="col text-center">
+            <h1 class="display-4" data-aos="fade">Portfolio</h1>
+            <p class="lead text-muted" data-aos="fade">
+              My Work
+            </p>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-4 col-lg-4">
+            <a href="https://pagetransition.netlify.app/"
+              ><img data-aos="fade-right" src="./images/bg01.jpg" class="img-thumbnail"
+            /></a>
+            <h5 class="my-3 font-weight-light">Page Transition</h5>
+          </div>
+
+          <div class="col-md-4 col-lg-4">
+            <a href="https://fancydiner1.netlify.app/"
+              ><img data-aos="fade" src="./images/fancyDiner.png" class="img-thumbnail"
+            /></a>
+            <h5 class="my-3 font-weight-light">Fancy Diner</h5>
+          </div>
+
+          <div class="col-md-4 col-lg-4">
+            <a href="https://fivestarsportscars.netlify.app"
+              ><img data-aos="fade-left" src="./images/greenCar-1.jpg" class="img-thumbnail"
+            /></a>
+            <h5 class="my-3 font-weight-light">
+              Five Star Sports Car
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-5" id="services">
+      <div class="container py-5">
+        <div class="row mb-5">
+          <div class="col text-center">
+            <h1 class="display-4" data-aos="fade">Services</h1>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4 col-lg-4">
+            <div class="mb-5 m-md-0">
+              <i class="fas fa-code fa-5x text-info mb-3" data-aos="fade-down"></i>
+              <h5 data-aos="fade-up" class="font-weight-light">Web Development</h5>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-4">
+            <div class="mb-5 m-md-0">
+              <i class="fab fa-ethereum fa-5x text-info mb-3" data-aos="fade-down"></i>
+              <h5 data-aos="fade-up" class="font-weight-light">Blockchain Development</h5>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-4">
+            <div class="mb-5 m-md-0">
+              <i class="fab fa-android fa-5x text-info mb-3" data-aos="fade-down"></i>
+              <h5 data-aos="fade-up" class="font-weight-light">Responsive Design</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+      <div class="container py-5">
+        <div class="row mb-5">
+          <div class="col text-center">
+            <h1 class="display-4" data-aos="fade-down">Contact</h1>
+            <p class="lead text-muted" data-aos="fade-up" data-aos-delay="20">Reach out</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-8">
+            <form data-netlify="true" method="POST" class="text-muted">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input data-aos="fade" type="text" class="form-control" id="name" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input data-aos="fade" type="email" class="form-control" id="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="textarea">Message:</label>
+                <textarea data-aos="fade"
+                  id="textarea"
+                  cols="5"
+                  rows="5"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <button data-aos="fade" class="btn btn-info mt-4 text-white btn-block">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <a href="https://https://github.com/nice10113"
+              ><i class="fab text-white fa-2x mx-4 fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/sylvester-hawthorne-iii
+            "
+              ><i class="fab text-white fa-2x mx-4 fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

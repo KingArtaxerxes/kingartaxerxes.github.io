@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  transition: all 0.4s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+textarea,
+ul,
+li,
+a {
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  padding: 25px;
+  margin: 10px;
+
+  cursor: pointer;
+  z-index: 6;
+
+  display: none;
+}
+
+.navbar-toggler .nav-btn {
+  height: 2px;
+  width: 25px;
+
+  background: #000;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+
+  position: relative;
+}
+
+.navbar-toggler .nav-btn::before,
+.navbar-toggler .nav-btn::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #000;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+
+.navbar-toggler .nav-btn::before {
+  transform: translateY(8px);
+  width: 20px;
+}
+
+.navbar-toggler .nav-btn::after {
+  transform: translateY(-8px);
+}
+
+.navbar-toggler.activeToggle .nav-btn {
+  background: transparent;
+}
+
+.navbar-toggler.activeToggle .nav-btn::after {
+  transform: rotate(45deg);
+  background: #fff;
+}
+
+.navbar-toggler.activeToggle .nav-btn::before {
+  transform: rotate(-45deg);
+  width: 30px;
+  background: #fff;
+}
+
+/* Navbar */
+.nav {
+  width: 100%;
+  height: 10vh;
+  transition: all 0.4s ease;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  z-index: 5;
+
+  position: fixed;
+  top: 0;
+}
+
+.nav.activeNavScroll {
+  background: #000;
+}
+
+.nav.activeNavScroll .logo {
+  color: #fff;
+}
+
+.nav.activeNavScroll .nav-links {
+  color: #fff !important;
+}
+
+.nav .logo {
+  color: #000;
+}
+
+.nav .logo span {
+  color: #2196f3;
+}
+
+.nav .nav-list {
+  text-align: center;
+}
+
+.nav .nav-list .nav-item {
+  padding: 15px;
+  display: inline-block;
+}
+
+.nav .nav-list .nav-item .nav-links {
+  color: #000;
+  transition: all 0.4s ease;
+}
+
+.nav .nav-list .nav-item .nav-links:hover {
+  color: #2196f3;
+}
+
+@media screen and (max-width: 980px) {
+  .nav {
+    height: 100%;
+    background: #000;
+
+    flex-direction: column;
+
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .nav .logo {
+    color: #fff;
+  }
+
+  .nav .nav-list .nav-item {
+    display: block;
+  }
+
+  .nav .nav-list .nav-item .nav-links {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: lighter;
+    letter-spacing: 2px;
+  }
+
+  /* Responsive Navbar Toggler */
+  .navbar-toggler {
+    display: block;
+  }
+
+  .nav.activeNavbar {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+#portfolio img {
+  width: 100%;
+  height: 45vh;
+  transition: all 0.4s ease-in-out;
+}
+
+#portfolio img:hover {
+  box-shadow: 0 0 10px 4px #2196f3;
+}
+
+@media screen and (max-width: 960px) {
+  #portfolio img {
+    height: 25vh;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #portfolio img {
+    height: 50vh;
+  }
+}
+/* About */
+#about .about-img {
+  width: 100%;
+  height: 60vh;
+  background: url("../images/camero.jpg") no-repeat center center / cover;
+}
+
+@media screen and (max-width: 860px) {
+  #about .about-img {
+    width: 100%;
+    height: 40vh;
+    margin: auto;
+  }
+}
